@@ -11,6 +11,7 @@ Physics teacher with a master's degree in physics trying to get inyo data analyt
 
 EMAIL = "ronaroka98@gmail.com"
 LINKEDIN_URL = "https://www.linkedin.com/in/rona-roka"
+GITHUB1_URL = "https://github.com/sofa-framework/sofa"
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
@@ -24,7 +25,7 @@ with open(resume_file, "rb") as pdf_file:
 profile_pic = Image.open(profile_pic_file)
 
 # Sidebar navigation
-page = st.sidebar.radio("Navigate", ["Home", "About"])
+page = st.sidebar.radio("Navigate", ["Home", "About", "Projects"])
 
 if page == "Home":
     # --- HERO SECTION ---
@@ -109,6 +110,21 @@ elif page == "About":
     which I am interested in developing further.
 
     """)
+
+elif page == " Projects":
+    st.title("My projects")
+    st.subheader("🔬 Physics Simulation App")
+    st.write("A simple app that demonstrates the free fall concept")
+    st.write("Tools used: Python & Streamlit")
+    st.write(f"🔗 Check this project on [GitHub]({GITHUB1_URL}).")
+
+    st.markdown("---")
+
+    st.subheader("🏎️ Motion calculator")
+    st.write("An app that calculates motion of objects")
+    st.write("Tools used: Python & Streamlit")
+    st.write(f"🔗 Check this project on [GitHub]({GITHUB1_URL}).")
+
 
     # Show LinkedIn and Email only on the About page
     st.write("📫", EMAIL)
