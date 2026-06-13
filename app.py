@@ -14,6 +14,13 @@ LINKEDIN_URL = "https://www.linkedin.com/in/rona-roka"
 GITHUB1_URL = "https://github.com/sofa-framework/sofa"
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
+st.markdown("""
+    <style>
+    .stApp {
+        background-color: #daf0f7;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Directly reference files in the assets folder (ensure it exists)
 resume_file = "assets/cv template.pdf"
@@ -114,7 +121,7 @@ elif page == "About":
     st.write("📫", EMAIL)
     st.write(f"Feel free to connect with me on [LinkedIn]({LINKEDIN_URL}).")
 
-elif page == " Projects":
+elif page == "Projects":
     st.title("My projects")
     st.subheader("🔬 Physics Simulation App")
     st.write("A simple app that demonstrates the free fall concept")
