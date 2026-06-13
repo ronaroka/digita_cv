@@ -110,6 +110,9 @@ elif page == "About":
     which I am interested in developing further.
 
     """)
+    # Show LinkedIn and Email only on the About page
+    st.write("📫", EMAIL)
+    st.write(f"Feel free to connect with me on [LinkedIn]({LINKEDIN_URL}).")
 
 elif page == " Projects":
     st.title("My projects")
@@ -126,6 +129,4 @@ elif page == " Projects":
     st.write(f"🔗 Check this project on [GitHub]({GITHUB1_URL}).")
 
 
-    # Show LinkedIn and Email only on the About page
-    st.write("📫", EMAIL)
-    st.write(f"Feel free to connect with me on [LinkedIn]({LINKEDIN_URL}).")
+    
